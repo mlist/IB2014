@@ -11,4 +11,4 @@ The following files are included:
 * merge.normal.samples.R: Add non-tumor "normal" samples 
 * varSelRF.R: Perform random forest using the varSelRF package.
 * helper_methods.R: Neat methods for analysing the data
-
+* pam50.txt: The 50 genes that are part of the PAM50 classifier (gold standard).
