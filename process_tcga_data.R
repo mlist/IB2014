@@ -44,7 +44,7 @@ names(meth.probe.id.to.gene.symbol) <- meth.probe.map$IlmnID
 
 #how many samples can we match to the ones we know the subtype for? filter step 2
 commonSamples <- intersect(colnames(brca.meth.full.raw),substr(names(PAM50),1,16))
-cat(paste("Number of samples we have subtype information on:", length(commonSamples) , "/", ncol(brca.meth.full), "\n"))
+cat(paste("Number of samples we have subtype information on:", length(commonSamples) , "/", ncol(brca.meth.full.raw), "\n"))
 brca.meth.full <- brca.meth.full.raw[,commonSamples]
 
 #replace probe names with gene symbols (better do this on the feature set, takes not so much time and we can distuinguish duplicates)
