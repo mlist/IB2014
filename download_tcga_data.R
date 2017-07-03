@@ -15,7 +15,7 @@ unlink(temp)
 
 #download gene mapping data for methylation data
 temp <- tempfile()
-download.file("https://tcga-data.nci.nih.gov/docs/integration/adfs/tcga/jhu-usc.edu_TCGA_HumanMethylation27.v2.adf.txt.zip", destfile=temp, method="wget")
+download.file("https://tcga-data.nci.nih.gov/docs/publications/tcga/integration/adfs/tcga/jhu-usc.edu_TCGA_HumanMethylation27.v2.adf.txt.zip", destfile=temp, method="wget")
 unzip(temp, "jhu-usc.edu_TCGA_HumanMethylation27.v2.adf.txt", exdir="data")
 unlink(temp)
 
